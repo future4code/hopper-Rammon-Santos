@@ -65,7 +65,12 @@ console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-  
+  const cor1 = prompt("Digite sua primeira cor favorita")
+  const cor2 = prompt("Digite sua segunda cor favorita")
+  const cor3 = prompt("Digite sua terceira cor favorita")
+  const cores = [cor1, cor2, cor3]
+
+  console.log(cores)
 
  
 
@@ -83,42 +88,75 @@ function retornaStringEmMaiuscula(string) {
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
+  
+
+  return custo / valorIngresso
+
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  
+  return string1 > string2
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  
+  return array[0]
 
 }
+
+
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  // implemente sua lógica aqui 
+
+
+  return array.pop()
+  
+  
 
 }
+
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
+  return array
+  
+  
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
 
+ 
+
+return string1.toLowerCase() === string2.toLowerCase() 
+
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+  const anoAtual = prompt("Qual o ano atual?")
+  const dataNascimento = prompt("Qual seu ano de nascimento")
+  const anoIdentidadeEmitida = prompt("Qual ano da emissao de sua identidade")
+
+ (anoAtual - anoIdentidadeEmitida) >= dataNascimento 
+
+
+  console.log( dataNascimento )
+
+
 
 }
 
