@@ -125,12 +125,20 @@ function retornaUltimoElemento(array) {
 }
 
 
-// EXERCÍCIO 11
+// EXERCÍCIO 11 - RESOLVER
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  //Escreva uma função que recebe um array e retorna 
+  //um array com o primeiro e o último elemento trocados.
 
-  return array
-  
+   const ultimo = array[array.length -1]
+   const primeiro = array[0]
+   
+   array[array.length - 1] = primeiro
+   array[0] = ultimo
+   return array
+   
+    
   
 }
 
@@ -144,29 +152,20 @@ return string1.toLowerCase() === string2.toLowerCase()
 
 }
 
-// EXERCÍCIO 13
+// EXERCÍCIO 13 - RESOLVER
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-  const anoAtual = prompt("Qual o ano atual?")
-  const dataNascimento = prompt("Qual seu ano de nascimento")
-  const anoIdentidadeEmitida = prompt("Qual ano da emissao de sua identidade")
-
- (anoAtual - anoIdentidadeEmitida) >= dataNascimento 
-
-
-  console.log( dataNascimento )
-
 
 
 }
 
-// EXERCÍCIO 14
+// EXERCÍCIO 14 - RESOLVER
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
 
 }
 
-// EXERCÍCIO 15
+// EXERCÍCIO 15 - RESOLVER
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
 
