@@ -1,5 +1,5 @@
 // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
-
+//teste gitIGNORE
 // EXERCÍCIO 0A
 function soma(num1, num2) {
   // implemente sua lógica aqui
