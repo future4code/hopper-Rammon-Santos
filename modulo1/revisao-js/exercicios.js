@@ -26,19 +26,25 @@ function retornaArrayOrdenado(array) {
 function retornaNumerosPares(array) {
     return array.filter(function (a) {
         if(a % 2 === 0 ) {
-            return 1
+            return a
         }
     })  
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+   
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    let numeroMaior = array[0]
+    for(let i = 1; i < array.length; i++){
+        if(array[i] > numeroMaior) {
+            numeroMaior = array[i]
+        }
+    }
+  return numeroMaior
 }
 
 // EXERCÍCIO 07
