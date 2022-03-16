@@ -15,9 +15,6 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) { 
-    // return array.sort(function (a, b) {
-    //     return a - b
-    // })
     return array.sort(function (a, b) {
         if(a < b ) {
             return -1
@@ -27,7 +24,11 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-
+    return array.filter(function (a) {
+        if(a % 2 === 0 ) {
+            return 1
+        }
+    })  
 }
 
 // EXERCÍCIO 05
