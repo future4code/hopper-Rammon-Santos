@@ -33,7 +33,7 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-   
+         
 }
 
 // EXERCÍCIO 06
@@ -54,6 +54,13 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
+    let nPares = []
+    for (let i = 0; nPares.length < n; i++) {
+        if (i % 2 == 0) {
+            nPares.push(i)
+        }
+    }
+    return nPares
    
 }
 
