@@ -33,9 +33,14 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-         
-}
-
+    let parElevado = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            return parElevado(array[i] ** 2)
+        }    
+    }    
+}   
+   
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
     let numeroMaior = array[0]
