@@ -28,7 +28,7 @@ function retornaNumerosPares(array) {
         if(a % 2 === 0 ) {
             return a
         }
-    })  
+    }) 
 }
 
 // EXERCÍCIO 05
