@@ -1,0 +1,37 @@
+body {
+    background-color: #ee8433;
+    font-family: sans-serif;
+    
+}
+.labenu {
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.menu {
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.table {
+    margin: 0 auto;
+}
+
+.redes-sociais {
+    text-align: center;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.rodape{
+    font-family: Verdana;
+    text-align: center;
+    color: #ffffff;
+}
