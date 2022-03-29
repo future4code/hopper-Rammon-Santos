@@ -134,6 +134,13 @@ td button {
     height: 100px;
 }
 
+.botao-comprar:hover {
+    background-color: #c4a700;
+    
+}
+.botao-comprar:active{
+    color: white;
+}
 
 #back-button {
     background-color: white;
