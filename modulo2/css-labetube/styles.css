@@ -72,3 +72,13 @@ footer {
     color: #ffffff;
     font-family: Verdana;
 }
+
+@media screen and ( max-device-width : 844px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+}
+
