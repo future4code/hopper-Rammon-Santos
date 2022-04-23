@@ -48,7 +48,7 @@ function App() {
         />
       </EstiloCardsBig>
 
-      <div>
+      
         <CardPequeno
           imagem2="https://cdn-icons-png.flaticon.com/512/561/561127.png"
           nome2= "Email:" 
@@ -59,7 +59,7 @@ function App() {
           nome2= "Endereço:" 
           descricao2= "Brasil - Paraíba"
         />
-      </div>
+     
 
       <EstiloCardsBig>
         <h2>Experiências profissionais</h2>
