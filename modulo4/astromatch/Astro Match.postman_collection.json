@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "2c52036f-8751-4aac-b3fa-d4f2775ce551",
+		"name": "Astro Match",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21027704"
+	},
+	"item": [
+		{
+			"name": "Get Profile To Choose",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/person",
+					"protocol": "https",
+					"host": [
+						"us-central1-missao-newton",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"astroMatch",
+						":aluno",
+						"person"
+					],
+					"variable": [
+						{
+							"key": "aluno",
+							"value": "darvas"
+						}
+					]
+				},
+				"description": "Retorna um perfil que ainda não foi visto por você."
+			},
+			"response": [
+				{
+					"name": "Get Profile To Choose",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/person",
+							"protocol": "https",
+							"host": [
+								"us-central1-missao-newton",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"astroMatch",
+								":aluno",
+								"person"
+							],
+							"variable": [
+								{
+									"key": "aluno",
+									"value": "darvas"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "241"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"f1-5AcV6pbdDls3Km1x4Da+ELZu4Tc\""
+						},
+						{
+							"key": "date",
+							"value": "Thu, 31 Oct 2019 03:49:40 GMT"
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"profile\": {\n        \"id\": \"xUrxMGvODWZa4ZASbfwx\",\n        \"age\": 26,\n        \"name\": \"Carol Danvers\",\n        \"photo\": \"https://s1.r29static.com/bin/entry/7e8/340x408,85/2138124/image.webp\",\n        \"bio\": \"Gosto de voar e de gatos. Procuro relações que respeitem minha independência.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Matches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches",
+					"protocol": "https",
+					"host": [
+						"us-central1-missao-newton",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"astroMatch",
+						":aluno",
+						"matches"
+					],
+					"variable": [
+						{
+							"key": "aluno",
+							"value": "daniel"
+						}
+					]
+				},
+				"description": "Retorna um array de perfis que deram match com você."
+			},
+			"response": [
+				{
+					"name": "Get Matches",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches",
+							"protocol": "https",
+							"host": [
+								"us-central1-missao-newton",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"astroMatch",
+								":aluno",
+								"matches"
+							],
+							"variable": [
+								{
+									"key": "aluno",
+									"value": "darvas"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "231"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"e7-v/ebR+H+PFfq10ip2OPQE7ZxOos\""
+						},
+						{
+							"key": "date",
+							"value": "Thu, 31 Oct 2019 03:48:33 GMT"
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"matches\": [\n        {\n            \"id\": \"71gMbZs2txS9LDvGK5Ew\",\n            \"age\": 26,\n            \"name\": \"Anitta\",\n            \"photo\": \"https://images.outgo.com.br/clients/1/events/2923/Anitta-Perfil-4-1.png\",\n            \"bio\": \"Amo cachorros e sair para dançar. Procuro alguém animado e sem neuras.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Choose Person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"71gMbZs2txS9LDvGK5Ew\",\n\t\"choice\": true\n}"
+				},
+				"url": {
+					"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/choose-person",
+					"protocol": "https",
+					"host": [
+						"us-central1-missao-newton",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"astroMatch",
+						":aluno",
+						"choose-person"
+					],
+					"variable": [
+						{
+							"key": "aluno",
+							"value": "darvas"
+						}
+					]
+				},
+				"description": "Recebe um id e uma escolha (choice). A escolha é a opção do usuário no momento do swipe. Deve ser true ou false."
+			},
+			"response": [
+				{
+					"name": "Choose Person",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"71gMbZs2txS9LDvGK5Ew\",\n\t\"choice\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/choose-person",
+							"protocol": "https",
+							"host": [
+								"us-central1-missao-newton",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"astroMatch",
+								":aluno",
+								"choose-person"
+							],
+							"variable": [
+								{
+									"key": "aluno",
+									"value": "darvas"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "16"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"10-0e6xWU4EI5gZq01g4tpjDKmBT1w\""
+						},
+						{
+							"key": "date",
+							"value": "Thu, 31 Oct 2019 03:48:25 GMT"
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"isMatch\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Clear",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/clear",
+					"protocol": "https",
+					"host": [
+						"us-central1-missao-newton",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"astroMatch",
+						":aluno",
+						"clear"
+					],
+					"variable": [
+						{
+							"key": "aluno",
+							"value": "darvas"
+						}
+					]
+				},
+				"description": "Limpa todos os matches e perfis vistos."
+			},
+			"response": [
+				{
+					"name": "Clear",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"PatusZf4mHH6UoZfYC8I\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/clear",
+							"protocol": "https",
+							"host": [
+								"us-central1-missao-newton",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"astroMatch",
+								":aluno",
+								"clear"
+							],
+							"variable": [
+								{
+									"key": "aluno",
+									"value": "darvas"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"15-uFFjCr0SbbbFb/CsC0M2sF++swo\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "soxfae8b3vjo"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "96af57f2cc43b2b4e885d742c272e2bf;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Oct 2019 04:36:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\"\n}"
+				}
+			]
+		}
+	]
+}
